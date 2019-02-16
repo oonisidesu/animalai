@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-md-center align-items-center">
+    </div>
+    <div class="row justify-content-md-center align-items-center">
+        <h1>ファイルをアップロードして判定しよう</h1>
+    </div>
+    <div class="row justify-content-md-center align-items-center">
+    </div>
+    <div class="row justify-content-md-center align-items-center">
+        <h2>イノシシorカラスorサル</h2>
+    </div>
+    <div class="row justify-content-md-center align-items-center">
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="card col-md-auto" style="width: 30rem;">
+          <img src={{ image }} class="card-img-top" alt="...">
+          <div class="card-body">
+            <h2 class="card-text text-center">{{ predicted }}</h2>
+            <h2 class="card-text text-center">確率:{{ percentage }}%</h2>
+          </div>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <a class="btn btn-primary" href="/" role="button">戻る</a>
+    </div>
+</div>
+{% endblock %}
